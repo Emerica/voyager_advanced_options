@@ -20,7 +20,6 @@
 <div class="form-group">
 	<div class="input-group datetimepicker">
 		<input
-      style="display:hidden;"
       type="text"
       name="{{ $row->field }}"
       class="form-control"
