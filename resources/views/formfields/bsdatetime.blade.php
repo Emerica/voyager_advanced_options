@@ -18,7 +18,7 @@
 
 
 <div class="form-group">
-	<div class="input-group datetimepicker">
+	<div class="input-group datetimepicker{{ $row->field }}">
 		<input
       type="text"
       name="{{ $row->field }}"
@@ -64,7 +64,7 @@ var defaults = {
 
 $(function() {
 	var optionsDatetime = $.extend({}, defaults, {format:'YYYY-MM-DD HH:mm:ss'});
-	$('.datetimepicker').datetimepicker(optionsDatetime);
+	$('.datetimepicker{{ $row->field }}').datetimepicker(optionsDatetime);
 });
 </script>
 @stop
